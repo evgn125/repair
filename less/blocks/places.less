@@ -1,0 +1,66 @@
+.places {
+  position: relative;
+  padding-top: 52px;
+  background-color: @bg-section;
+  &__text {
+    display: block;
+    max-width: 550px;
+    margin: 38px auto 40px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 200;
+    text-align: center;
+  }
+  &__car {
+    display: block;
+    margin: 20px auto 0;
+  }
+  &__board {
+    position: absolute;
+    left: 0;
+    top: -220px;
+    @media only screen and (max-width: 1450px) {
+      width: 250px;
+      top: -150px;
+    }
+    @media only screen and (max-width: 1050px) {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .places {
+    padding-top: 40px;
+    &__title {
+      font-size: 43px;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .places {
+    padding-top: 30px;
+    &__title {
+      font-size: 30px;
+    }
+    &__text {
+      margin: 30px auto;
+      max-width: 360px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .places {
+    &__title {
+      font-size: 25px;
+    }
+  }
+}

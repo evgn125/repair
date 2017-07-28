@@ -1,0 +1,137 @@
+.map {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  background: url("../img/map.jpg") center no-repeat;
+  background-size: cover;
+  &__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+  }
+  &__blue-fill {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    margin-left: 500px;
+    background-color: #66b0d5;
+  }
+  &__google {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__address {
+    position: relative;
+    z-index: 2;
+    min-height: 527px;
+    padding-top: 102px;
+    padding-left: 148px;
+    background-color: #66b0d5;
+    border-bottom-left-radius: 81% 87%;
+  }
+  &__title {
+    margin: 0;
+    font-size: 46px;
+    font-weight: 100;
+  }
+  &__text {
+    margin-top: 18px;
+    margin-bottom: 31px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  &__motherboard {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: -176px;
+    @media only screen and (max-width: 1420px) {
+      width: 230px;
+      top: -160px;
+    }
+    @media only screen and (max-width: 1255px) {
+      width: 200px;
+      top: -130px;
+    }
+    @media only screen and (max-width: 1050px) {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .map {
+    &__blue-fill {
+      margin-left: 400px;
+    }
+    &__address {
+     padding-top: 125px; 
+    }
+    &__title {
+      font-size: 40px;
+    }
+    &__text {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .map {
+    background-position: 60% center;
+    &__blue-fill {
+      margin-left: 350px;
+    }
+    &__address {
+      padding-top: 140px; 
+      padding-left: 100px;
+    }
+    &__text {
+      margin-bottom: 0;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .map {
+    &__address {
+      padding-top: 170px; 
+      padding-left: 20px;
+      border-radius: 0;
+      text-align: center;
+    }
+    &__title {
+      font-size: 35px;
+    }
+    &__text {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 25px;
+    }
+    & .phone {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .map {
+    overflow: hidden;
+    &__address {
+      min-height: 480px;
+      padding-top: 140px;
+      padding-left: 8px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

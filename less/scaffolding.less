@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff2") format("woff2"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/RobotoThin/RobotoThin.eot");
+  src: url("../fonts/RobotoThin/RobotoThin.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoThin/RobotoThin.woff2") format("woff2"), url("../fonts/RobotoThin/RobotoThin.woff") format("woff"), url("../fonts/RobotoThin/RobotoThin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff2") format("woff2"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/RobotoCondensedLight/RobotoCondensedLight.eot");
+  src: url("../fonts/RobotoCondensedLight/RobotoCondensedLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensedLight/RobotoCondensedLight.woff2") format("woff2"), url("../fonts/RobotoCondensedLight/RobotoCondensedLight.woff") format("woff"), url("../fonts/RobotoCondensedLight/RobotoCondensedLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.woff2") format("woff2"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff2") format("woff2"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/RobotoBlack/RobotoBlack.eot");
+  src: url("../fonts/RobotoBlack/RobotoBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBlack/RobotoBlack.woff2") format("woff2"), url("../fonts/RobotoBlack/RobotoBlack.woff") format("woff"), url("../fonts/RobotoBlack/RobotoBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  color: #000;
+  background-color: #fff;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  display: block;
+  width: 333px;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-size: 21px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  background-color: @bg-button;
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: #000;
+    background-color: lighten(@bg-button, 10%);
+  }
+  @media only screen and (max-width: 991px) {
+    width: 260px;
+    font-size: 17px;
+  }
+  @media only screen and (max-width: 767px) {
+    width: 250px;
+    padding: 15px 0;
+    font-size: 16px;
+  }
+}
+
+.button-small {
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+  padding: 19px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  border-radius: 30px;
+  background-color: @bg-button;
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: #000;
+    background-color: lighten(@bg-button, 10%);
+  }
+  @media only screen and (max-width: 767px) {
+    width: 250px;
+    padding: 15px 0;
+    font-size: 16px;
+  }
+}
+
+.title {
+  margin: 0;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  & span {
+    font-weight: 100;
+  }
+}

@@ -1,0 +1,100 @@
+.clients {
+  position: relative;
+  padding: 117px 0 108px;
+  background: url("../img/clients.jpg") center no-repeat;
+  background-size: cover;
+  color: #fff;
+  &__title {
+    line-height: 73px;
+    color: #fff;
+  }
+  &__items {
+    margin-top: 75px;
+    text-align: center;
+  }
+  &__item {
+    margin-bottom: 72px;
+  }
+  &__item-photo {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  &__item-description {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    text-align: left;
+  }
+  &__item-name {
+    font-size: 27px;
+    font-weight: bold;
+  }
+  &__item-text {
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 200;
+  }
+  &__button {
+    background-color: #fff;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #eee;
+    }
+  }
+  &__twisted-pair {
+    position: absolute;
+    right: 0;
+    top: -175px;
+    @media only screen and (max-width: 1420px) {
+      width: 250px;
+      top: -125px;
+    }
+    @media only screen and (max-width: 1255px) {
+      width: 200px;
+      top: -90px;
+    }
+    @media only screen and (max-width: 1050px) {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .clients {
+    padding: 80px 0;
+    &__item-description {
+      width: 189px;
+    }
+    &__item-name {
+      font-size: 26px;
+    }
+    &__item-text {
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .clients {
+    padding: 60px 0;
+    &__item {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .clients {
+    padding: 40px 0;
+    &__title {
+      font-size: 43px;
+      line-height: 50px;
+    }
+    &__items {
+      margin-top: 50px;
+    }
+  }
+}

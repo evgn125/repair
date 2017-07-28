@@ -1,0 +1,132 @@
+.main-menu {
+  margin-bottom: 0;
+  padding-top: 30px;
+  background: none;
+  border: none;
+  & .nav {
+    padding-top: 4px;
+    padding-left: 35px;
+    font-size: 22px;
+    font-weight: 300;
+    text-transform: uppercase;
+    &>li>a {
+      color: rgba(255, 255, 255, 0.65);
+      padding-right: 18px;
+      &:hover,
+      &:focus,
+      &:active {
+        color: rgba(255, 255, 255, 0.65);
+        text-decoration: underline;
+        background: none;
+      }
+    }
+  }
+  & .navbar-brand {
+    display: block;
+    min-height: 65px;
+    padding-bottom: 0;
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: none;
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff;
+    }
+    & img {
+      display: inline-block;
+      float: left;
+      margin-right: 2px;
+      margin-top: -12px;
+    }
+    & span {
+      font-size: 18px;
+      font-weight: 200;
+      color: rgba(255, 255, 255, 0.65);
+      ;
+    }
+  }
+  & .navbar-right {
+    margin-right: 78px;
+  }
+  & .navbar-toggle {
+    background-color: #fff;
+    &:focus,
+    &:active {
+      background-color: #fff;
+    }
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .main-menu {
+    & .nav {
+      padding-left: 25px;
+      &>li>a {
+        padding-left: 5px;
+      }
+    }
+    & .navbar-brand {
+      font-size: 25px;
+      & span {
+        font-size: 16px;
+      }
+      & img {
+        width: 68px;
+      }
+    }
+    & .navbar-right {
+      margin-right: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .main-menu {
+    padding-top: 5px;
+    & .nav {
+      padding-left: 0px;
+      &>li>a {
+        padding-right: 6px;
+        padding-left: 0;
+        font-size: 21px;
+      }
+    }
+    & .navbar-brand {
+      font-size: 20px;
+      & span {
+        font-size: 14px;
+      }
+      & img {
+        width: 60px;
+        margin-top: -5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-menu {
+    & .nav {
+      margin-top: 0;
+      padding-top: 0;
+      text-align: center;
+    }
+    & .navbar-right {
+      margin-left: 62px;
+      margin-bottom: 5px;
+    }
+    & .navbar-collapse {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      border: none;
+      background-color: #3d4e58;
+    }
+  }
+}
