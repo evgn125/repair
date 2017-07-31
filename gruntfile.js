@@ -45,6 +45,17 @@ module.exports = function (grunt) {
     },
     uncss: {
       dist: {
+        options: {
+          ignore: [
+                ".fade",
+                ".fade.in",
+                ".collapse",
+                ".collapse.in",
+                ".collapsing",
+                ".alert-danger",
+                /\.open/
+           ],
+        },
         files: {
           "build/style.css": ["index.html"]
         }
@@ -61,6 +72,18 @@ module.exports = function (grunt) {
       dist: {
         files: {
           "css/style.min.css": ["build/style.css"]
+        }
+      }
+    },
+    htmlmin: {
+      dist: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true,
+          preserveLineBreaks: true
+        },
+        files: {
+          'index.html': 'index.html'
         }
       }
     },
@@ -81,11 +104,10 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-concat");
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-cssmin");
-
   grunt.loadNpmTasks('grunt-uncss');
-
-
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.registerTask("img", ["imagemin"]);
   grunt.registerTask("min", ["concat", "uncss", "uglify", "cssmin"]);
+  grunt.registerTask("ht", ["htmlmin"]);
   grunt.registerTask("default", ["watch"]);
 };

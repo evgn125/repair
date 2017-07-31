@@ -11,6 +11,7 @@
     "grunt-contrib-uglify": "3.0.1",
     "grunt-contrib-cssmin": "2.2.1",
     "grunt-contrib-imagemin": "2.0.1",
-    "grunt-uncss": "0.6.2"
+    "grunt-uncss": "0.6.2",
+    "grunt-contrib-htmlmin": "2.4.0"
   }
 }
