@@ -30,9 +30,9 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'img/',
-          src: ['**/*.{png,jpg,gif}'],
-          dest: 'build/img/'
+          cwd: "img/",
+          src: ["**/*.{png,jpg,gif}"],
+          dest: "build/img/"
         }]
       }
     },
@@ -61,17 +61,23 @@ module.exports = function (grunt) {
         }
       }
     },
-    uglify: {
+    combine_mq: {
       dist: {
-        files: {
-          "js/script.min.js": ["build/script.js"]
-        }
+        src: "build/style.css",
+        dest: "build/style_mq.css"
       }
     },
     cssmin: {
       dist: {
         files: {
-          "css/style.min.css": ["build/style.css"]
+          "css/style.min.css": ["build/style_mq.css"]
+        }
+      }
+    },
+    uglify: {
+      dist: {
+        files: {
+          "js/script.min.js": ["build/script.js"]
         }
       }
     },
@@ -83,7 +89,7 @@ module.exports = function (grunt) {
           preserveLineBreaks: true
         },
         files: {
-          'index.html': 'index.html'
+          "index.html": "index.html"
         }
       }
     },
@@ -100,14 +106,15 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-less");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-postcss");
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks("grunt-contrib-imagemin");
   grunt.loadNpmTasks("grunt-contrib-concat");
-  grunt.loadNpmTasks("grunt-contrib-uglify");
+  grunt.loadNpmTasks("grunt-uncss");
+  grunt.loadNpmTasks("grunt-combine-mq");
   grunt.loadNpmTasks("grunt-contrib-cssmin");
-  grunt.loadNpmTasks('grunt-uncss');
-  grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks("grunt-contrib-uglify");
+  grunt.loadNpmTasks("grunt-contrib-htmlmin");
   grunt.registerTask("img", ["imagemin"]);
-  grunt.registerTask("min", ["concat", "uncss", "uglify", "cssmin"]);
+  grunt.registerTask("min", ["concat", "uncss", "combine_mq", "cssmin", "uglify"]);
   grunt.registerTask("ht", ["htmlmin"]);
   grunt.registerTask("default", ["watch"]);
 };
