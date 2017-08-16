@@ -1,6 +1,18 @@
 "use strict";
 
 module.exports = function (grunt) {
+
+  grunt.loadNpmTasks("grunt-combine-mq");
+  grunt.loadNpmTasks("grunt-contrib-concat");
+  grunt.loadNpmTasks("grunt-contrib-cssmin");
+  grunt.loadNpmTasks("grunt-contrib-htmlmin");
+  grunt.loadNpmTasks("grunt-contrib-imagemin");
+  grunt.loadNpmTasks("grunt-contrib-less");
+  grunt.loadNpmTasks("grunt-contrib-uglify");
+  grunt.loadNpmTasks("grunt-contrib-watch");
+  grunt.loadNpmTasks("grunt-postcss");
+  grunt.loadNpmTasks("grunt-uncss");
+  
   grunt.initConfig({
     less: {
       development: {
@@ -103,16 +115,6 @@ module.exports = function (grunt) {
       }
     }
   });
-  grunt.loadNpmTasks("grunt-contrib-less");
-  grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks("grunt-postcss");
-  grunt.loadNpmTasks("grunt-contrib-imagemin");
-  grunt.loadNpmTasks("grunt-contrib-concat");
-  grunt.loadNpmTasks("grunt-uncss");
-  grunt.loadNpmTasks("grunt-combine-mq");
-  grunt.loadNpmTasks("grunt-contrib-cssmin");
-  grunt.loadNpmTasks("grunt-contrib-uglify");
-  grunt.loadNpmTasks("grunt-contrib-htmlmin");
 
   grunt.registerTask("img", ["imagemin"]);
   grunt.registerTask("min", ["concat", "uglify", "uncss", "combine_mq", "cssmin"]);
