@@ -1,555 +1,457 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Починилкин.ру - ремонт электроники</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<title>Починилкин.ру - ремонт электроники</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body>
-
-  <header class="header">
-
-    <nav class="main-menu navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-          <a class="navbar-brand navbar-left" href="#"><img src="img/logo.png" alt="">Починилкин.ру<br>
-            <span>ремонт электроники</span></a>
-        </div>
-
-        <div class="phone navbar-right">
-          <a class="phone__number" href="#">8 800 270-00-00</a>
-          <a class="phone__button" href="#">Заказать звонок</a>
-        </div>
-
-        <div class="navbar-collapse collapse">
-
-          <ul class="nav navbar-nav">
-            <li><a href="#price">Цены</a></li>
-            <li><a href="#stages">Этапы</a></li>
-            <li><a href="#clients">Отзывы</a></li>
-            <li><a href="#places">Мастера</a></li>
-            <li><a href="#map">Контакты</a></li>
-          </ul>
-        </div>
-      </div>
-
-    </nav>
-
-    <div class="header__table">
-      <div class="header__row">
-        <div class="header__cell">
-
-          <div class="header__intro container">
-            <h1 class="header__title">Выездной ремонт вашего гаджета</h1>
-
-            <div class="header__items row">
-              <div class="col-sm-4">
-                <img class="header__image" src="img/diploma.png" alt="Диплом">
-                <p class="header__text-parts">Оригинальные запчасти</p>
-              </div>
-              <div class="col-sm-4">
-                <img class="header__image" src="img/time.png" alt="Время">
-                <p class="header__text-time">Ремонт в день обращения</p>
-              </div>
-              <div class="col-sm-4">
-                <img class="header__image" src="img/pay.png" alt="Деньги">
-                <p class="header__text-pay">С нами экономно</p>
-              </div>
-            </div>
-            <!-- end header__items -->
-
-            <a class="button" href="#">Бесплатная консультация</a>
-
-          </div>
-          <!-- end header__intro -->
-
-        </div>
-        <!-- end header__cell -->
-      </div>
-      <!-- end header__row -->
-    </div>
-    <!-- end header__table -->
-
-    <p class="header__note">*Ремонт любой степени сложности</p>
-
-  </header>
-  <!-- end header -->
-
-  <section class="price" id="price">
-    <img class="price__videocard" src="img/videocard.png" alt="Видеокарта">
-    <div class="container">
-      <h2 class="price__title title">Выберите модель<br><span>вашего устройства</span></h2>
-      <p class="price__note">Цены указаны с учетом проведения работ в сервисном центре</p>
-
-      <ul class="price__models">
-        <li class="price__models-item"><a class="price__models-link price__models-link--active" href="#">5</a></li>
-        <li class="price__models-item"><a class="price__models-link" href="#">5C</a></li>
-        <li class="price__models-item"><a class="price__models-link" href="#">5S</a></li>
-        <li class="price__models-item"><a class="price__models-link" href="#">SE</a></li>
-        <li class="price__models-item"><a class="price__models-link" href="#">6</a></li>
-        <li class="price__models-item"><a class="price__models-link" href="#">6 Plus</a></li>
-        <li class="price__models-item"><a class="price__models-link" href="#">6S</a></li>
-        <li class="price__models-item"><a class="price__models-link" href="#">6S Plus</a></li>
-        <li class="price__models-item"><a class="price__models-link" href="#">7</a></li>
-        <li class="price__models-item"><a class="price__models-link" href="#">7 Plus</a></li>
-      </ul>
-      <!-- end price__models -->
-
-      <div class="price__items row">
-        <a href="#" class="price__item col-sm-12 col-md-6">
-          <span class="price__item-name">Замена дисплея</span>
-          <span class="price__item-cost">3200 р.</span>
-          <span class="price__item-more">Подробнее</span>
-        </a>
-        <a href="#" class="price__item col-sm-12 col-md-6">
-          <span class="price__item-name">Замена аккумулятора</span>
-          <span class="price__item-cost">2500 р.</span>
-          <span class="price__item-more">Подробнее</span>
-        </a>
-        <a href="#" class="price__item col-sm-12 col-md-6">
-          <span class="price__item-name">Замена слухового динамика</span>
-          <span class="price__item-cost">2250 р.</span>
-          <span class="price__item-more">Подробнее</span>
-        </a>
-        <a href="#" class="price__item col-sm-12 col-md-6">
-          <span class="price__item-name">Замена металлического корпуса</span>
-          <span class="price__item-cost">3100 р.</span>
-          <span class="price__item-more">Подробнее</span>
-        </a>
-        <a href="#" class="price__item col-sm-12 col-md-6">
-          <span class="price__item-name">Замена кнопки Home</span>
-          <span class="price__item-cost">2200 р.</span>
-          <span class="price__item-more">Подробнее</span>
-        </a>
-        <a href="#" class="price__item col-sm-12 col-md-6">
-          <span class="price__item-name">Замена кнопки переклюяения вибро</span>
-          <span class="price__item-cost">2400 р.</span>
-          <span class="price__item-more">Подробнее</span>
-        </a>
-        <a href="#" class="price__item col-sm-12 col-md-6">
-          <span class="price__item-name">Замена кнопки включения</span>
-          <span class="price__item-cost">2250 р.</span>
-          <span class="price__item-more">Подробнее</span>
-        </a>
-        <a href="#" class="price__item col-sm-12 col-md-6">
-          <span class="price__item-name">Замена кнопок громкости</span>
-          <span class="price__item-cost">2400 р.</span>
-          <span class="price__item-more">Подробнее</span>
-        </a>
-        <a href="#" class="price__item col-sm-12 col-md-6">
-          <span class="price__item-name">Замена микрофона</span>
-          <span class="price__item-cost">2200 р.</span>
-          <span class="price__item-more">Подробнее</span>
-        </a>
-        <a href="#" class="price__item col-sm-12 col-md-6">
-          <span class="price__item-name">Замена основной камеры</span>
-          <span class="price__item-cost">2300 р.</span>
-          <span class="price__item-more">Подробнее</span>
-        </a>
-        <a href="#" class="price__item col-sm-12 col-md-6">
-          <span class="price__item-name">Замена передней камеры</span>
-          <span class="price__item-cost">2250 р.</span>
-          <span class="price__item-more">Подробнее</span>
-        </a>
-        <a href="#" class="price__item col-sm-12 col-md-6">
-          <span class="price__item-name">Замена полифонического динамика</span>
-          <span class="price__item-cost">2200 р.</span>
-          <span class="price__item-more">Подробнее</span>
-        </a>
-        <a href="#" class="price__item col-sm-12 col-md-6">
-          <span class="price__item-name">Замена разъема зарядки</span>
-          <span class="price__item-cost">2400 р.</span>
-          <span class="price__item-more">Подробнее</span>
-        </a>
-        <a href="#" class="price__item col-sm-12 col-md-6">
-          <span class="price__item-name">Замена разъема наушников</span>
-          <span class="price__item-cost">2400 р.</span>
-          <span class="price__item-more">Подробнее</span>
-        </a>
-      </div>
-      <!-- end price__items -->
-
-      <a class="button" href="#">Вызвать мастера</a>
-
-    </div>
-    <!-- end container -->
-
-  </section>
-  <!-- end price -->
-
-  <section class="stages" id="stages">
-    <img class="stages__motherboard" src="img/motherboard-1.png" alt="Материнская плата">
-    <div class="container">
-      <h2 class="stages__title title">Порядок оказания услуги<br><span>Починилкин.ру</span></h2>
-
-      <!-- Nav tabs -->
-      <ul class="stages__types nav nav-pills">
-        <li class="active"><a href="#notebook" data-toggle="tab">Сломался ноутбук</a></li>
-        <li><a href="#smartphone" data-toggle="tab">Сломался смартфон</a></li>
-        <li><a href="#slow-notebook" data-toggle="tab">Тормозит ноутбук</a></li>
-      </ul>
-
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <div class="stages__items tab-pane fade in active row" id="notebook">
-
-          <div class="col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-0">
-            <div class="stages__item">
-              <img src="img/stage-1.jpg" alt="Этап 1">
-              <p class="stages__item-text">Вы назначаете встречу в вашем офисе, в&nbsp;кафе,&nbsp;дома</p>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="stages__item">
-              <img src="img/stage-2.jpg" alt="Этап 2">
-              <p class="stages__item-text">Выездной мастер приедет в удобное для&nbsp;вас время к вам</p>
-            </div>
-          </div>
-          <div class="col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-0">
-            <div class="stages__item">
-              <img src="img/stage-3.jpg" alt="Этап 3">
-              <p class="stages__item-text">Мастер примет оплату, выдаст чек и оставит акт передачи</p>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="stages__item">
-              <img src="img/stage-4.jpg" alt="Этап 4">
-              <p class="stages__item-text">Через сутки мастер привезет вам домой починенный ноутбук</p>
-            </div>
-          </div>
-
-        </div>
-        <!-- end stages__items -->
-
-        <div class="stages__items tab-pane fade row" id="smartphone">
-
-          <div class="col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-0">
-            <div class="stages__item">
-              <img src="img/stage-2.jpg" alt="Этап 2">
-              <p class="stages__item-text">Вы назначаете встречу в вашем офисе, в&nbsp;кафе,&nbsp;дома</p>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="stages__item">
-              <img src="img/stage-1.jpg" alt="Этап 1">
-              <p class="stages__item-text">Выездной мастер приедет в удобное для&nbsp;вас время к вам</p>
-            </div>
-          </div>
-          <div class="col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-0">
-            <div class="stages__item">
-              <img src="img/stage-4.jpg" alt="Этап 4">
-              <p class="stages__item-text">Мастер примет оплату, выдаст чек и оставит акт передачи</p>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="stages__item">
-              <img src="img/stage-3.jpg" alt="Этап 3">
-              <p class="stages__item-text">Через сутки мастер привезет вам домой починенный телефон</p>
-            </div>
-          </div>
-
-        </div>
-        <!-- end stages__items -->
-
-        <div class="stages__items tab-pane fade row" id="slow-notebook">
-
-          <div class="col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-0">
-            <div class="stages__item">
-              <img src="img/stage-4.jpg" alt="Этап 4">
-              <p class="stages__item-text">Вы назначаете встречу в вашем офисе, в&nbsp;кафе,&nbsp;дома</p>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="stages__item">
-              <img src="img/stage-3.jpg" alt="Этап 3">
-              <p class="stages__item-text">Выездной мастер приедет в удобное для&nbsp;вас время к вам</p>
-            </div>
-          </div>
-          <div class="col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-0">
-            <div class="stages__item">
-              <img src="img/stage-1.jpg" alt="Этап 1">
-              <p class="stages__item-text">Мастер примет оплату, выдаст чек и оставит акт передачи</p>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-3">
-            <div class="stages__item">
-              <img src="img/stage-2.jpg" alt="Этап 2">
-              <p class="stages__item-text">Через сутки мастер привезет вам домой улучшенный ноутбук</p>
-            </div>
-          </div>
-
-        </div>
-        <!-- end stages__items -->
-      </div>
-      <!-- end tab-content -->
-    </div>
-    <!-- end container -->
-  </section>
-  <!-- end stages -->
-
-  <section class="clients" id="clients">
-    <img class="clients__twisted-pair" src="img/pair.png" alt="Витая пара">
-    <div class="container">
-      <h2 class="clients__title title">Клиенты<br><span>наша гордость</span></h2>
-      <div class="clients__items row">
-        <div class="clients__item col-sm-6 col-md-4">
-          <img class="clients__item-photo" src="img/client-1.png" alt="Николай Попов">
-          <div class="clients__item-description">
-            <p class="clients__item-name">Николай Попов</p>
-            <p class="clients__item-text">Только топовые мастера работают в нашей компании</p>
-          </div>
-        </div>
-        <div class="clients__item col-sm-6 col-md-4">
-          <img class="clients__item-photo" src="img/client-2.png" alt="Николай Попов">
-          <div class="clients__item-description">
-            <p class="clients__item-name">Николай Попов</p>
-            <p class="clients__item-text">Только топовые мастера работают в нашей компании</p>
-          </div>
-        </div>
-        <div class="clients__item col-sm-6 col-md-4">
-          <img class="clients__item-photo" src="img/client-1.png" alt="Николай Попов">
-          <div class="clients__item-description">
-            <p class="clients__item-name">Николай Попов</p>
-            <p class="clients__item-text">Только топовые мастера работают в нашей компании</p>
-          </div>
-        </div>
-        <div class="clients__item col-sm-6 col-md-4">
-          <img class="clients__item-photo" src="img/client-3.png" alt="Николай Попов">
-          <div class="clients__item-description">
-            <p class="clients__item-name">Николай Попов</p>
-            <p class="clients__item-text">Только топовые мастера работают в нашей компании</p>
-          </div>
-        </div>
-        <div class="clients__item col-sm-6 col-md-4">
-          <img class="clients__item-photo" src="img/client-4.png" alt="Никита Попова">
-          <div class="clients__item-description">
-            <p class="clients__item-name">Никита Попова</p>
-            <p class="clients__item-text">Только топовые мастера работают в нашей компании</p>
-          </div>
-        </div>
-        <div class="clients__item col-sm-6 col-md-4">
-          <img class="clients__item-photo" src="img/client-3.png" alt="Николай Попов">
-          <div class="clients__item-description">
-            <p class="clients__item-name">Николай Попов</p>
-            <p class="clients__item-text">Только топовые мастера работают в нашей компании</p>
-          </div>
-        </div>
-      </div>
-      <!-- end clients__items -->
-
-      <a class="clients__button button-small" href="#">Оставить отзыв</a>
-
-    </div>
-    <!-- end container -->
-  </section>
-  <!-- end clients -->
-
-  <section class="places" id="places">
-    <img class="places__board" src="img/board.png" alt="Печатная плата">
-    <div class="container">
-      <h2 class="places__title title">Подъедем куда скажете</h2>
-      <p class="places__text">Места куда мы обычно выезжаем: в&nbsp;кафе, в&nbsp;офис, в&nbsp;институт, прямо домой или на&nbsp;дачу</p>
-      <a class="button-small" href="#">Вызвать мастера</a>
-      <img class="places__car" src="img/car.jpg" alt="Автомобиль">
-    </div>
-    <!-- end container -->
-  </section>
-  <!-- end places -->
-
-  <section class="news">
-    <img class="news__usb-board" src="img/usb-board.png" alt="USB плата">
-    <div class="container">
-      <h2 class="news__title title">Новости ремонта</h2>
-      <div class="news__items row">
-        <div class="col-sm-4">
-          <div class="news__item">
-            <a class="news__item-link" href="#">
-              <img src="img/news-1.jpg" alt="Новость 1">
-              <h3 class="news__item-title">Почему горит яблоко на IPhone и что с этим делать?</h3>
-            </a>
-            <p class="news__item-text">Вы сделали неприятное для себя открытие: айфон сломался?</p>
-            <a class="news__item-button" href="#">Подробнее</a>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="news__item">
-            <a class="news__item-link" href="#">
-              <img src="img/news-2.jpg" alt="Новость 2">
-              <h3 class="news__item-title">Почему горит яблоко на IPhone и что с этим делать?</h3>
-            </a>
-            <p class="news__item-text">Вы сделали неприятное для себя открытие: айфон сломался?</p>
-            <a class="news__item-button" href="#">Подробнее</a>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="news__item">
-            <a class="news__item-link" href="#">
-              <img src="img/news-3.jpg" alt="Новость 3">
-              <h3 class="news__item-title">Почему горит яблоко на IPhone и что с этим делать?</h3>
-            </a>
-            <p class="news__item-text">Вы сделали неприятное для себя открытие: айфон сломался?</p>
-            <a class="news__item-button" href="#">Подробнее</a>
-          </div>
-        </div>
-      </div>
-      <!-- end news__items -->
-      <img class="news__usb" src="img/usb.png" alt="USB кабель">
-    </div>
-    <!-- end container -->
-  </section>
-  <!-- end news -->
-
-  <section class="map">
-    <img class="map__motherboard" src="img/motherboard-2.png" alt="Материнская плата">
-    <div class="map__overlay">
-      <div class="map__blue-fill"></div>
-    </div>
-    <div class="map__google" id="map"></div>
-
-    <div class="container">
-      <div class="row">
-        <div class="map__address col-xs-offset-7 col-xs-5">
-          <h2 class="map__title">Адрес</h2>
-          <p class="map__text">1-й Смоленский пер., 21, Москва, 121099</p>
-          <div class="phone">
-            <a class="phone__number" href="#">8 800 270-00-00</a>
-            <a class="phone__button" href="#">Заказать звонок</a>
-          </div>
-        </div>
-        <!-- end map_address -->
-      </div>
-      <!-- end row -->
-    </div>
-    <!-- end container -->
-
-  </section>
-  <!-- end map -->
-
-  <section class="callback">
-    <div class="container">
-      <h2 class="callback__title title">Вызовите мастера</h2>
-      <p class="callback__note">мы работаем без выходных!</p>
-
-      <form class="row" action="index.html" method="post">
-
-        <div class="col-sm-4">
-          <input class="callback__input" type="text" name="name" maxlength="50" placeholder="Ваше имя">
-        </div>
-        <div class="col-sm-4">
-          <input class="callback__input" id="phone" type="tel" name="phone" maxlength="18" placeholder="Ваш телефон">
-        </div>
-        <div class="col-sm-4">
-          <button class="callback__button button" type="submit">Бесплатная консультация</button>
-        </div>
-
-      </form>
-
-    </div>
-    <!-- end container -->
-  </section>
-  <!-- end callback -->
-
-  <section class="bottom-links">
-    <div class="container">
-      <div class="row">
-        <ul class="bottom-links__menu col-sm-9 col-lg-8">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#price">Цены</a></li>
-          <li><a href="#stages">Этапы</a></li>
-          <li><a href="#clients">Отзывы</a></li>
-          <li><a href="#places">Мастера</a></li>
-          <li><a href="#map">Контакты</a></li>
-        </ul>
-        <div class="bottom-links__phone col-sm-3 col-lg-4">
-          <a href="#">8 800 270-00-00</a>
-        </div>
-      </div>
-      <!-- end row -->
-
-      <div class="bottom-links__items row hidden-xs">
-        <div class="col-sm-3">
-          <a href="#">Вы сделали неприятное</a>
-          <a href="#">Открытие: айфон сломался?</a>
-          <a href="#">Вы сделали неприятное</a>
-          <a href="#">Открытие: айфон сломался?</a>
-          <a href="#">Вы сделали неприятное</a>
-        </div>
-        <div class="col-sm-3">
-          <a href="#">Вы сделали неприятное</a>
-          <a href="#">Открытие: айфон сломался?</a>
-          <a href="#">Вы сделали неприятное</a>
-          <a href="#">Открытие: айфон сломался?</a>
-          <a href="#">Вы сделали неприятное</a>
-        </div>
-        <div class="col-sm-3">
-          <a href="#">Вы сделали неприятное</a>
-          <a href="#">Открытие: айфон сломался?</a>
-          <a href="#">Вы сделали неприятное</a>
-          <a href="#">Открытие: айфон сломался?</a>
-          <a href="#">Вы сделали неприятное</a>
-        </div>
-        <div class="col-sm-3">
-          <a href="#">Вы сделали неприятное</a>
-          <a href="#">Открытие: айфон сломался?</a>
-          <a href="#">Вы сделали неприятное</a>
-          <a href="#">Открытие: айфон сломался?</a>
-          <a href="#">Вы сделали неприятное</a>
-        </div>
-      </div>
-      <!-- end bottom-links__items -->
-    </div>
-    <!-- end container -->
-
-  </section>
-  <!-- end bottom-links -->
-
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-sm-4">
-          <div class="footer__social-buttons">
-            <a href="#" class="vk">Вконтакте</a>
-            <a href="#" class="fb">Фейсбук</a>
-            <a href="#" class="ok">Одноклассники</a>
-            <a href="#" class="gp">Google Plus</a>
-            <a href="#" class="tw">Твиттер</a>
-          </div>
-          <p class="footer__copyright">© 2017. Все права защищены</p>
-        </div>
-
-        <div class="footer__platforms col-sm-4">
-          <a href="#"><img src="img/ios.png" alt="iOS"></a>
-          <a href="#"><img src="img/android.png" alt="Android"></a>
-          <a href="#"><img src="img/windows.png" alt="Windows Phone"></a>
-        </div>
-
-        <div class="col-sm-4">
-          <img src="img/payments.png" alt="Платежные системы" width="274" height="86">
-        </div>
-
-      </div>
-      <!-- end row -->
-    </div>
-    <!-- end container -->
-  </footer>
-  <!-- end footer -->
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
-  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvUKSe43tjPGneiflCWE4PJQL1ysm863s&callback=initMap"></script>
+<header class="header">
+<nav class="main-menu navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand navbar-left" href="#"><img src="img/logo.png" alt="">Починилкин.ру<br>
+<span>ремонт электроники</span></a>
+</div>
+<div class="phone navbar-right">
+<a class="phone__number" href="#">8 800 270-00-00</a>
+<a class="phone__button" href="#">Заказать звонок</a>
+</div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li><a href="#price">Цены</a></li>
+<li><a href="#stages">Этапы</a></li>
+<li><a href="#clients">Отзывы</a></li>
+<li><a href="#places">Мастера</a></li>
+<li><a href="#map">Контакты</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="header__table">
+<div class="header__row">
+<div class="header__cell">
+<div class="header__intro container">
+<h1 class="header__title">Выездной ремонт вашего гаджета</h1>
+<div class="header__items row">
+<div class="col-sm-4">
+<img class="header__image" src="img/diploma.png" alt="Диплом">
+<p class="header__text-parts">Оригинальные запчасти</p>
+</div>
+<div class="col-sm-4">
+<img class="header__image" src="img/time.png" alt="Время">
+<p class="header__text-time">Ремонт в день обращения</p>
+</div>
+<div class="col-sm-4">
+<img class="header__image" src="img/pay.png" alt="Деньги">
+<p class="header__text-pay">С нами экономно</p>
+</div>
+</div>
+<a class="button" href="#">Бесплатная консультация</a>
+</div>
+</div>
+</div>
+</div>
+<p class="header__note">*Ремонт любой степени сложности</p>
+</header>
+<section class="price" id="price">
+<img class="price__videocard" src="img/videocard.png" alt="Видеокарта">
+<div class="container">
+<h2 class="price__title title">Выберите модель<br><span>вашего устройства</span></h2>
+<p class="price__note">Цены указаны с учетом проведения работ в сервисном центре</p>
+<ul class="price__models">
+<li class="price__models-item"><a class="price__models-link price__models-link--active" href="#">5</a></li>
+<li class="price__models-item"><a class="price__models-link" href="#">5C</a></li>
+<li class="price__models-item"><a class="price__models-link" href="#">5S</a></li>
+<li class="price__models-item"><a class="price__models-link" href="#">SE</a></li>
+<li class="price__models-item"><a class="price__models-link" href="#">6</a></li>
+<li class="price__models-item"><a class="price__models-link" href="#">6 Plus</a></li>
+<li class="price__models-item"><a class="price__models-link" href="#">6S</a></li>
+<li class="price__models-item"><a class="price__models-link" href="#">6S Plus</a></li>
+<li class="price__models-item"><a class="price__models-link" href="#">7</a></li>
+<li class="price__models-item"><a class="price__models-link" href="#">7 Plus</a></li>
+</ul>
+<div class="price__items row">
+<a href="#" class="price__item col-sm-12 col-md-6">
+<span class="price__item-name">Замена дисплея</span>
+<span class="price__item-cost">3200 р.</span>
+<span class="price__item-more">Подробнее</span>
+</a>
+<a href="#" class="price__item col-sm-12 col-md-6">
+<span class="price__item-name">Замена аккумулятора</span>
+<span class="price__item-cost">2500 р.</span>
+<span class="price__item-more">Подробнее</span>
+</a>
+<a href="#" class="price__item col-sm-12 col-md-6">
+<span class="price__item-name">Замена слухового динамика</span>
+<span class="price__item-cost">2250 р.</span>
+<span class="price__item-more">Подробнее</span>
+</a>
+<a href="#" class="price__item col-sm-12 col-md-6">
+<span class="price__item-name">Замена металлического корпуса</span>
+<span class="price__item-cost">3100 р.</span>
+<span class="price__item-more">Подробнее</span>
+</a>
+<a href="#" class="price__item col-sm-12 col-md-6">
+<span class="price__item-name">Замена кнопки Home</span>
+<span class="price__item-cost">2200 р.</span>
+<span class="price__item-more">Подробнее</span>
+</a>
+<a href="#" class="price__item col-sm-12 col-md-6">
+<span class="price__item-name">Замена кнопки переклюяения вибро</span>
+<span class="price__item-cost">2400 р.</span>
+<span class="price__item-more">Подробнее</span>
+</a>
+<a href="#" class="price__item col-sm-12 col-md-6">
+<span class="price__item-name">Замена кнопки включения</span>
+<span class="price__item-cost">2250 р.</span>
+<span class="price__item-more">Подробнее</span>
+</a>
+<a href="#" class="price__item col-sm-12 col-md-6">
+<span class="price__item-name">Замена кнопок громкости</span>
+<span class="price__item-cost">2400 р.</span>
+<span class="price__item-more">Подробнее</span>
+</a>
+<a href="#" class="price__item col-sm-12 col-md-6">
+<span class="price__item-name">Замена микрофона</span>
+<span class="price__item-cost">2200 р.</span>
+<span class="price__item-more">Подробнее</span>
+</a>
+<a href="#" class="price__item col-sm-12 col-md-6">
+<span class="price__item-name">Замена основной камеры</span>
+<span class="price__item-cost">2300 р.</span>
+<span class="price__item-more">Подробнее</span>
+</a>
+<a href="#" class="price__item col-sm-12 col-md-6">
+<span class="price__item-name">Замена передней камеры</span>
+<span class="price__item-cost">2250 р.</span>
+<span class="price__item-more">Подробнее</span>
+</a>
+<a href="#" class="price__item col-sm-12 col-md-6">
+<span class="price__item-name">Замена полифонического динамика</span>
+<span class="price__item-cost">2200 р.</span>
+<span class="price__item-more">Подробнее</span>
+</a>
+<a href="#" class="price__item col-sm-12 col-md-6">
+<span class="price__item-name">Замена разъема зарядки</span>
+<span class="price__item-cost">2400 р.</span>
+<span class="price__item-more">Подробнее</span>
+</a>
+<a href="#" class="price__item col-sm-12 col-md-6">
+<span class="price__item-name">Замена разъема наушников</span>
+<span class="price__item-cost">2400 р.</span>
+<span class="price__item-more">Подробнее</span>
+</a>
+</div>
+<a class="button" href="#">Вызвать мастера</a>
+</div>
+</section>
+<section class="stages" id="stages">
+<img class="stages__motherboard" src="img/motherboard-1.png" alt="Материнская плата">
+<div class="container">
+<h2 class="stages__title title">Порядок оказания услуги<br><span>Починилкин.ру</span></h2>
+<ul class="stages__types nav nav-pills">
+<li class="active"><a href="#notebook" data-toggle="tab">Сломался ноутбук</a></li>
+<li><a href="#smartphone" data-toggle="tab">Сломался смартфон</a></li>
+<li><a href="#slow-notebook" data-toggle="tab">Тормозит ноутбук</a></li>
+</ul>
+<div class="tab-content">
+<div class="stages__items tab-pane fade in active row" id="notebook">
+<div class="col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-0">
+<div class="stages__item">
+<img src="img/stage-1.jpg" alt="Этап 1">
+<p class="stages__item-text">Вы назначаете встречу в вашем офисе, в&nbsp;кафе,&nbsp;дома</p>
+</div>
+</div>
+<div class="col-sm-4 col-md-3">
+<div class="stages__item">
+<img src="img/stage-2.jpg" alt="Этап 2">
+<p class="stages__item-text">Выездной мастер приедет в удобное для&nbsp;вас время к вам</p>
+</div>
+</div>
+<div class="col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-0">
+<div class="stages__item">
+<img src="img/stage-3.jpg" alt="Этап 3">
+<p class="stages__item-text">Мастер примет оплату, выдаст чек и оставит акт передачи</p>
+</div>
+</div>
+<div class="col-sm-4 col-md-3">
+<div class="stages__item">
+<img src="img/stage-4.jpg" alt="Этап 4">
+<p class="stages__item-text">Через сутки мастер привезет вам домой починенный ноутбук</p>
+</div>
+</div>
+</div>
+<div class="stages__items tab-pane fade row" id="smartphone">
+<div class="col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-0">
+<div class="stages__item">
+<img src="img/stage-2.jpg" alt="Этап 2">
+<p class="stages__item-text">Вы назначаете встречу в вашем офисе, в&nbsp;кафе,&nbsp;дома</p>
+</div>
+</div>
+<div class="col-sm-4 col-md-3">
+<div class="stages__item">
+<img src="img/stage-1.jpg" alt="Этап 1">
+<p class="stages__item-text">Выездной мастер приедет в удобное для&nbsp;вас время к вам</p>
+</div>
+</div>
+<div class="col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-0">
+<div class="stages__item">
+<img src="img/stage-4.jpg" alt="Этап 4">
+<p class="stages__item-text">Мастер примет оплату, выдаст чек и оставит акт передачи</p>
+</div>
+</div>
+<div class="col-sm-4 col-md-3">
+<div class="stages__item">
+<img src="img/stage-3.jpg" alt="Этап 3">
+<p class="stages__item-text">Через сутки мастер привезет вам домой починенный телефон</p>
+</div>
+</div>
+</div>
+<div class="stages__items tab-pane fade row" id="slow-notebook">
+<div class="col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-0">
+<div class="stages__item">
+<img src="img/stage-4.jpg" alt="Этап 4">
+<p class="stages__item-text">Вы назначаете встречу в вашем офисе, в&nbsp;кафе,&nbsp;дома</p>
+</div>
+</div>
+<div class="col-sm-4 col-md-3">
+<div class="stages__item">
+<img src="img/stage-3.jpg" alt="Этап 3">
+<p class="stages__item-text">Выездной мастер приедет в удобное для&nbsp;вас время к вам</p>
+</div>
+</div>
+<div class="col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-0">
+<div class="stages__item">
+<img src="img/stage-1.jpg" alt="Этап 1">
+<p class="stages__item-text">Мастер примет оплату, выдаст чек и оставит акт передачи</p>
+</div>
+</div>
+<div class="col-sm-4 col-md-3">
+<div class="stages__item">
+<img src="img/stage-2.jpg" alt="Этап 2">
+<p class="stages__item-text">Через сутки мастер привезет вам домой улучшенный ноутбук</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="clients" id="clients">
+<img class="clients__twisted-pair" src="img/pair.png" alt="Витая пара">
+<div class="container">
+<h2 class="clients__title title">Клиенты<br><span>наша гордость</span></h2>
+<div class="clients__items row">
+<div class="clients__item col-sm-6 col-md-4">
+<img class="clients__item-photo" src="img/client-1.png" alt="Николай Попов">
+<div class="clients__item-description">
+<p class="clients__item-name">Николай Попов</p>
+<p class="clients__item-text">Только топовые мастера работают в нашей компании</p>
+</div>
+</div>
+<div class="clients__item col-sm-6 col-md-4">
+<img class="clients__item-photo" src="img/client-2.png" alt="Николай Попов">
+<div class="clients__item-description">
+<p class="clients__item-name">Николай Попов</p>
+<p class="clients__item-text">Только топовые мастера работают в нашей компании</p>
+</div>
+</div>
+<div class="clients__item col-sm-6 col-md-4">
+<img class="clients__item-photo" src="img/client-1.png" alt="Николай Попов">
+<div class="clients__item-description">
+<p class="clients__item-name">Николай Попов</p>
+<p class="clients__item-text">Только топовые мастера работают в нашей компании</p>
+</div>
+</div>
+<div class="clients__item col-sm-6 col-md-4">
+<img class="clients__item-photo" src="img/client-3.png" alt="Николай Попов">
+<div class="clients__item-description">
+<p class="clients__item-name">Николай Попов</p>
+<p class="clients__item-text">Только топовые мастера работают в нашей компании</p>
+</div>
+</div>
+<div class="clients__item col-sm-6 col-md-4">
+<img class="clients__item-photo" src="img/client-4.png" alt="Никита Попова">
+<div class="clients__item-description">
+<p class="clients__item-name">Никита Попова</p>
+<p class="clients__item-text">Только топовые мастера работают в нашей компании</p>
+</div>
+</div>
+<div class="clients__item col-sm-6 col-md-4">
+<img class="clients__item-photo" src="img/client-3.png" alt="Николай Попов">
+<div class="clients__item-description">
+<p class="clients__item-name">Николай Попов</p>
+<p class="clients__item-text">Только топовые мастера работают в нашей компании</p>
+</div>
+</div>
+</div>
+<a class="clients__button button-small" href="#">Оставить отзыв</a>
+</div>
+</section>
+<section class="places" id="places">
+<img class="places__board" src="img/board.png" alt="Печатная плата">
+<div class="container">
+<h2 class="places__title title">Подъедем куда скажете</h2>
+<p class="places__text">Места куда мы обычно выезжаем: в&nbsp;кафе, в&nbsp;офис, в&nbsp;институт, прямо домой или на&nbsp;дачу</p>
+<a class="button-small" href="#">Вызвать мастера</a>
+<img class="places__car" src="img/car.jpg" alt="Автомобиль">
+</div>
+</section>
+<section class="news">
+<img class="news__usb-board" src="img/usb-board.png" alt="USB плата">
+<div class="container">
+<h2 class="news__title title">Новости ремонта</h2>
+<div class="news__items row">
+<div class="col-sm-4">
+<div class="news__item">
+<a class="news__item-link" href="#">
+<img src="img/news-1.jpg" alt="Новость 1">
+<h3 class="news__item-title">Почему горит яблоко на IPhone и что с этим делать?</h3>
+</a>
+<p class="news__item-text">Вы сделали неприятное для себя открытие: айфон сломался?</p>
+<a class="news__item-button" href="#">Подробнее</a>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="news__item">
+<a class="news__item-link" href="#">
+<img src="img/news-2.jpg" alt="Новость 2">
+<h3 class="news__item-title">Почему горит яблоко на IPhone и что с этим делать?</h3>
+</a>
+<p class="news__item-text">Вы сделали неприятное для себя открытие: айфон сломался?</p>
+<a class="news__item-button" href="#">Подробнее</a>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="news__item">
+<a class="news__item-link" href="#">
+<img src="img/news-3.jpg" alt="Новость 3">
+<h3 class="news__item-title">Почему горит яблоко на IPhone и что с этим делать?</h3>
+</a>
+<p class="news__item-text">Вы сделали неприятное для себя открытие: айфон сломался?</p>
+<a class="news__item-button" href="#">Подробнее</a>
+</div>
+</div>
+</div>
+<img class="news__usb" src="img/usb.png" alt="USB кабель">
+</div>
+</section>
+<section class="map">
+<img class="map__motherboard" src="img/motherboard-2.png" alt="Материнская плата">
+<div class="map__overlay">
+<div class="map__blue-fill"></div>
+</div>
+<div class="map__google" id="map"></div>
+<div class="container">
+<div class="row">
+<div class="map__address col-xs-offset-7 col-xs-5">
+<h2 class="map__title">Адрес</h2>
+<p class="map__text">1-й Смоленский пер., 21, Москва, 121099</p>
+<div class="phone">
+<a class="phone__number" href="#">8 800 270-00-00</a>
+<a class="phone__button" href="#">Заказать звонок</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="callback">
+<div class="container">
+<h2 class="callback__title title">Вызовите мастера</h2>
+<p class="callback__note">мы работаем без выходных!</p>
+<form class="row" action="index.html" method="post">
+<div class="col-sm-4">
+<input class="callback__input" type="text" name="name" maxlength="50" placeholder="Ваше имя">
+</div>
+<div class="col-sm-4">
+<input class="callback__input" id="phone" type="tel" name="phone" maxlength="18" placeholder="Ваш телефон">
+</div>
+<div class="col-sm-4">
+<button class="callback__button button" type="submit">Бесплатная консультация</button>
+</div>
+</form>
+</div>
+</section>
+<section class="bottom-links">
+<div class="container">
+<div class="row">
+<ul class="bottom-links__menu col-sm-9 col-lg-8">
+<li><a href="#">Главная</a></li>
+<li><a href="#price">Цены</a></li>
+<li><a href="#stages">Этапы</a></li>
+<li><a href="#clients">Отзывы</a></li>
+<li><a href="#places">Мастера</a></li>
+<li><a href="#map">Контакты</a></li>
+</ul>
+<div class="bottom-links__phone col-sm-3 col-lg-4">
+<a href="#">8 800 270-00-00</a>
+</div>
+</div>
+<div class="bottom-links__items row hidden-xs">
+<div class="col-sm-3">
+<a href="#">Вы сделали неприятное</a>
+<a href="#">Открытие: айфон сломался?</a>
+<a href="#">Вы сделали неприятное</a>
+<a href="#">Открытие: айфон сломался?</a>
+<a href="#">Вы сделали неприятное</a>
+</div>
+<div class="col-sm-3">
+<a href="#">Вы сделали неприятное</a>
+<a href="#">Открытие: айфон сломался?</a>
+<a href="#">Вы сделали неприятное</a>
+<a href="#">Открытие: айфон сломался?</a>
+<a href="#">Вы сделали неприятное</a>
+</div>
+<div class="col-sm-3">
+<a href="#">Вы сделали неприятное</a>
+<a href="#">Открытие: айфон сломался?</a>
+<a href="#">Вы сделали неприятное</a>
+<a href="#">Открытие: айфон сломался?</a>
+<a href="#">Вы сделали неприятное</a>
+</div>
+<div class="col-sm-3">
+<a href="#">Вы сделали неприятное</a>
+<a href="#">Открытие: айфон сломался?</a>
+<a href="#">Вы сделали неприятное</a>
+<a href="#">Открытие: айфон сломался?</a>
+<a href="#">Вы сделали неприятное</a>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<div class="row">
+<div class="col-sm-4">
+<div class="footer__social-buttons">
+<a href="#" class="vk">Вконтакте</a>
+<a href="#" class="fb">Фейсбук</a>
+<a href="#" class="ok">Одноклассники</a>
+<a href="#" class="gp">Google Plus</a>
+<a href="#" class="tw">Твиттер</a>
+</div>
+<p class="footer__copyright">© 2017. Все права защищены</p>
+</div>
+<div class="footer__platforms col-sm-4">
+<a href="#"><img src="img/ios.png" alt="iOS"></a>
+<a href="#"><img src="img/android.png" alt="Android"></a>
+<a href="#"><img src="img/windows.png" alt="Windows Phone"></a>
+</div>
+<div class="col-sm-4">
+<img src="img/payments.png" alt="Платежные системы" width="274" height="86">
+</div>
+</div>
+</div>
+</footer>
+<script src="js/script.min.js"></script>
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvUKSe43tjPGneiflCWE4PJQL1ysm863s&callback=initMap"></script>
 </body>
-
 </html>
