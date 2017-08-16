@@ -23,7 +23,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-          <a class="navbar-brand navbar-left" href="#"><img src="img/logo.png" alt="Починилкин.ру">Починилкин.ру<br>
+          <a class="navbar-brand navbar-left" href="#"><img src="img/logo.png" alt="">Починилкин.ру<br>
             <span>ремонт электроники</span></a>
         </div>
 
@@ -410,17 +410,15 @@
   </section>
   <!-- end news -->
 
-  <section class="map" id="map">
+  <section class="map">
     <img class="map__motherboard" src="img/motherboard-2.png" alt="Материнская плата">
     <div class="map__overlay">
       <div class="map__blue-fill"></div>
     </div>
-    <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.5846647369167!2d37.57919284534918!3d55.74834512789611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bb67ea0221d%3A0x937fb71f8009de4f!2zMS3QuSDQodC80L7Qu9C10L3RgdC60LjQuSDQv9C10YAuLCAyMSwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyMTA5OQ!5e0!3m2!1sru!2sru!4v1500036519488" width="100%" height="527" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="map__google" id="map"></div>
 
     <div class="container">
-
       <div class="row">
-
         <div class="map__address col-xs-offset-7 col-xs-5">
           <h2 class="map__title">Адрес</h2>
           <p class="map__text">1-й Смоленский пер., 21, Москва, 121099</p>
@@ -437,6 +435,8 @@
 
   </section>
   <!-- end map -->
+
+
 
   <section class="callback">
     <div class="container">
@@ -550,6 +550,7 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvUKSe43tjPGneiflCWE4PJQL1ysm863s&callback=initMap"></script>
   <script src="js/script.js"></script>
 </body>
 

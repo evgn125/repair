@@ -43,6 +43,13 @@ module.exports = function (grunt) {
         }
       }
     },
+    uglify: {
+      dist: {
+        files: {
+          "js/script.min.js": ["build/script.js"]
+        }
+      }
+    },
     uncss: {
       dist: {
         options: {
@@ -71,13 +78,6 @@ module.exports = function (grunt) {
       dist: {
         files: {
           "css/style.min.css": ["build/style_mq.css"]
-        }
-      }
-    },
-    uglify: {
-      dist: {
-        files: {
-          "js/script.min.js": ["build/script.js"]
         }
       }
     },
@@ -113,8 +113,9 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-cssmin");
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-htmlmin");
+
   grunt.registerTask("img", ["imagemin"]);
-  grunt.registerTask("min", ["concat", "uncss", "combine_mq", "cssmin", "uglify"]);
+  grunt.registerTask("min", ["concat", "uglify", "uncss", "combine_mq", "cssmin"]);
   grunt.registerTask("ht", ["htmlmin"]);
   grunt.registerTask("default", ["watch"]);
 };
