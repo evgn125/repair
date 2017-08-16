@@ -10,8 +10,7 @@ function initMap() {
     fullscreenControl: false,
     zoomControlOptions: {
       position: google.maps.ControlPosition.TOP_LEFT
-    },
-
+    }
   });
   var marker = new google.maps.Marker({
     position: {
