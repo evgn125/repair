@@ -15,7 +15,7 @@ module.exports = function (grunt) {
   
   grunt.initConfig({
     less: {
-      development: {
+      dist: {
         files: {
           "css/style.css": "less/style.less"
         }
